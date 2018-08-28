@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* Собрать все стили */
+/* mixins.scss */
+/* grids.scss */
+/* Сетка для main-header */
+.main-header {
+  display: flex;
+  min-height: 48px;
+  width: 100%;
+  background-color: #ffffff;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+/* fonts.scss */
+@font-face {
+  font-family: Roboto-Black;
+  src: url(../../fonts/Roboto-Black.ttf); }
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../../fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../../fonts/Roboto-Light.ttf); }
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../../fonts/Roboto-Regular.ttf); }
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../../fonts/Roboto-Medium.ttf); }
+
+/* main.scss */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #e3e4e9; }
+
+/* main-header.scss */
+.main-header__header {
+  width: 165px;
+  height: 19px;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #7b9be0; }
+
+.main-header__logo {
+  width: 91px;
+  height: 19px;
+  margin-left: 328px;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+  color: #7b9be0; }
+
+.btn--message {
+  width: 48px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: 8px;
+  background-color: #ffffff;
+  background-image: url(../images/header-link-button.svg);
+  cursor: pointer;
+  border: none;
+  outline: none; }
+
+.btn--toggle {
+  width: 62px;
+  height: 48px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  outline: none; }
+  .btn--toggle::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    width: 18px;
+    height: 2px;
+    background-color: #7b9be0; }
+  .btn--toggle::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    width: 18px;
+    height: 2px;
+    background-color: #7b9be0;
+    top: 20px; }
+  .btn--toggle span::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    width: 18px;
+    height: 2px;
+    background-color: #7b9be0;
+    top: 28px; }

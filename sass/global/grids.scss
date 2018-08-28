@@ -1,0 +1,13 @@
+
+/* grids.scss */
+/* Сетка для main-header */
+
+.main-header {
+  display: flex;
+  min-height: 48px;
+  width: 100%;
+  background-color: $white-background-color;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
