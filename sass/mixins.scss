@@ -1,0 +1,33 @@
+/* mixins.scss */
+
+@mixin fontsHeader {
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+@mixin elenementOgToggle {
+  content: "";
+  position: absolute;
+  left: 22px;
+  width: 18px;
+  height: 2px;
+  background-color: #7b9be0;
+}
+
+@mixin listOfToggleElements {
+  &::before {
+    @include elenementOgToggle();
+  }
+  &::after {
+    @include elenementOgToggle();
+    top: 20px;
+  }
+  & span::before {
+    @include elenementOgToggle();
+    top: 28px;
+  }
+}

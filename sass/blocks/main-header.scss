@@ -1,0 +1,44 @@
+/* main-header.scss */
+
+.main-header {
+  &__header {
+    width: 165px;
+    height: 19px;
+    @include fontsHeader();
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #7b9be0;
+  }
+  &__logo {
+    width: 91px;
+    height: 19px;
+    margin-left: 328px;
+    @include fontsHeader();
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    color: #7b9be0;
+  }
+}
+
+.btn {
+  &--message {
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: 8px;
+    background-color: $white-background-color;
+    background-image: url(../images/header-link-button.svg);
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  &--toggle {
+    width:62px;
+    height:48px;
+    background-color: $white-background-color;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    @include listOfToggleElements();
+  }
+}

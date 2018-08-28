@@ -1,0 +1,10 @@
+/* Собрать все стили */
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/grids.scss";
+@import "global/fonts.scss";
+@import "global/main.scss";
+
+@import "blocks/main-header.scss";
