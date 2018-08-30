@@ -1,0 +1,336 @@
+/* details-order.scss */
+/* details-order */
+
+.details-order {
+  display: flex;
+  flex-direction: column;
+  &__header {
+    width: 980px;
+    min-height: 84px;
+  }
+  &__main-header {
+    width: 198px;
+    @include fontsForOrderDetailsHeaderMain();
+  }
+  &__middle-header {
+    width: 67px;
+    margin-left: 15px;
+    @include fontsForOrderDetailsHeaderMain();
+  }
+  &__status {
+    width: 105px;
+    margin-left: 37px;
+    position: relative;
+    @include fontsForOrderDetailsHeaderMainMiddle();
+    &::before {
+      @include iconForWitingStatus();
+    }
+  }
+  &__date {
+    margin-left: 318px;
+    margin-right: 25px;
+    @include fontsForOrderDetailsHeaderMainDate();
+    &--right {
+      margin-left: 558px;
+    }
+    & span {
+      font-weight: normal;
+      color: #4a4a4a;
+    }
+  }
+  &__number {
+    width: 67px;
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    &:first-of-type {
+      margin-left: 0px;
+    }
+    @include fontsForOrderDetailsHeaderNumber();
+  }
+}
+
+.period__time {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin:auto;
+  margin-left: 32px;
+  @include fontsForPeriodBetweenFligts();
+  color: #921313;
+
+  &::before {
+    @include iconForWitingStatusRed();
+  }
+}
+
+.tickets__last-column {
+  width: 270px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin:auto;
+  @include fontsForPeriodBetweenFligts();
+  color: #4b4c52;
+}
+
+.column-fligts__flight {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Первая колонка билета */
+
+.flight__company-column {
+  display:flex;
+  flex-direction: column;
+  width: 90px;
+  height: 138px;
+  & img {
+    margin-top:20px;
+    margin-left: 12px;
+  }
+  & span {
+    @include flightCompanyFonts();
+  }
+  & b {
+    @include flightCompanyFontsNumber();
+  }
+}
+
+.flight__timetable-column {
+  display:flex;
+  flex-direction: column;
+  width: 280px;
+  height: 138px;
+  margin-left: 19px;
+}
+
+/* Первая колонка билета */
+
+.timetable-column {
+  &__city {
+    position: relative;
+    @include flexForTableFligts();
+    margin-top: 2px;
+    & b {
+    @include flightCityFonts();
+    }
+  }
+  &__aero {
+    @include flexForTableFligts();
+    margin-top: 1px;
+    & span {
+      @include flightAeroFonts();
+    }
+  }
+  &__terminal {
+    margin-top: 2px;
+    & span {
+      @include flightTerminalFonts();
+    }
+  }
+  &__flight-time {
+    @include flexForTableFligts();
+    margin-top: 28px;
+    & time {
+      @include flightTimeFonts();
+    }
+  }
+  &__flight-date {
+    @include flexForTableFligts();
+    margin-top: 7px;
+    & span, & time {
+      @include flightDateFonts();
+    }
+  }
+}
+
+/* Третья колонка билета */
+
+.flight__service-column {
+  display:flex;
+  flex-direction: column;
+  width: 271px;
+  height: 138px;
+  margin-left: 20px;
+}
+
+.flight {
+  &__service-information {
+    margin: 0;
+    @include flightsInformFontsLeft();
+    color: #5d5f65;
+    margin-top: 5px;
+    position: relative;
+    &:last-of-type {
+      display: inline-flex;
+      flex-direction: row;
+    }
+  }
+  &__information-item {
+    color: #000000;
+  }
+  &__code-tariff {
+    @include flightsInformFontsTariff();
+    color: #7b9be0;
+    border-bottom: dotted 1px #7b9be0;
+  }
+
+  &__wifi {
+    &::before {
+    @include wifiIcon();
+    }
+  }
+  &__charging {
+    &::before {
+    @include seatIcon();
+    }
+  }
+  &__seat {
+    &::before {
+    @include chargeIcon();
+    }
+  }
+  &__youtube {
+    &::before {
+    @include youtubeIcon();
+    }
+  }
+
+  &__border-line {
+    &::before {
+      content: "";
+      position: absolute;
+      left:0;
+      margin-left: 109px;
+      margin-top: 6px;
+      width: 32px;
+      border: dashed 1px #000000;
+    }
+    &--yellow {
+      &::before {
+        border: dashed 1px #fd9727;
+      }
+    }
+    &--green {
+      &::before {
+        border: dashed 1px #8cc152;
+      }
+    }
+    &--longer {
+      &::before {
+        width: 124px;
+      }
+    }
+  }
+}
+
+/* Колонка с информацией справа */
+
+.buy-navigation {
+  list-style-type: none;
+  display:flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  &__item {
+    height: 16px;
+    display:flex;
+    position:relative;
+    margin-right: 25px;
+    cursor:pointer;
+    margin-top: 12px;
+    &--plus {
+      &::before, &::after {
+        @include plusForListOfLinks();
+      }
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    &:first-of-type {
+      margin-top: 10px;
+    }
+    & a {
+      @include fontsRightListOfLinks();
+      color: #7b9be0;
+      border-bottom: solid 1px #7b9be0;
+    }
+    &:hover a {
+      border-bottom: none;
+    }
+  }
+}
+
+.annotation {
+  &__price {
+    @include fontPriceDetailsOrder();
+  }
+  &__card {
+    margin-top: 8px;
+    @include fontCardDetailsOrder();
+    color: #000000;
+  }
+  &__plan {
+    margin-top: 4px;
+    @include fontPlanDetailOrder();
+    color: #7b9be0;
+    border-bottom: solid 1px #7b9be0;
+  }
+}
+
+.footer__buttons {
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+.btn {
+  &--bg {
+    width: 157px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: $white-background-color;
+    border: solid 1px #7b9be0;
+    margin-right: 11px;
+    position: relative;
+    & span {
+      @include btnForDetailOrderBlockBgFont();
+      margin-left: 30px;
+    }
+  }
+  &--seat {
+    & span {
+      &::before {
+        @include addIcnSeatForBtn ();
+      }
+    }
+  }
+  &--bucks {
+    & span {
+      &::before {
+        @include addIcnBucksForBtn();
+      }
+    }
+  }
+  &--icn-cancelled {
+    & span {
+      &::before {
+        @include addIncCancelledForBtn();
+      }
+    }
+  }
+
+  &--cancel {
+    width: 108px;
+    height: 36px;
+    border-radius: 2px;
+    border: solid 1px #b61e1b;
+    background-color: $white-background-color;
+    position: relative;
+    & span {
+      @include btnForDetailOrderBlockFont();
+      margin-left:30px;
+    }
+  }
+}

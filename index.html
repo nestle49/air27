@@ -13,39 +13,466 @@
     <a class="main-header__logo">Avialogo</a>
     <button class="btn btn--message"></button>
   </header>
-<!--
-  <div>
-    <nav class="main-navigation">
-      <a class="main-header__logo">
-        <img src="" width="" height="" alt="Логотип магазина Gllacy">
-      </a>
-      <ul class="site-navigation">
-        <li class="site-navigation__item"><a src="price.html">Каталог</a></li>
-        <li class="site-navigation__item"><a src="catalog.html">Доставка и оплата</a></li>
-        <li class="site-navigation__item"><a src="contacts.html">О Компании</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <form class="user-navigation__search"></form>
-        <li class="user-navigation__login-link">Вход</li>
-        <li class="user-navigation__cart">Пусто</li>
-      </ul>
-    </nav>
-    <section class="user-info no-breadcrumbs">
-            <div class="user-info__contacts">
-              <p> С 10 до 20, ежедневно </p>
-              <p>
-                <a href="tel:+78124502525"> 8 812 450-25-25 </a>
-              </p>
+  <div class="container">
+    <aside class="container__sidebar">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="site-navigation__item site-navigation__item--active"><a>Детали заказа</a></li>
+          <li class="site-navigation__item"><a src="#">Обмен</a></li>
+          <li class="site-navigation__item"><a src="#">PNR</a></li>
+          <li class="site-navigation__item"><a src="#">Доп. сервисы</a></li>
+          <li class="site-navigation__item"><a src="#">Счета</a></li>
+          <li class="site-navigation__item"><a src="#">История операций</a></li>
+          <li class="site-navigation__item"><a src="#">Запросы</a></li>
+          <li class="site-navigation__item"><a src="#">Все заказы</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="container__main-content">
+      <section class="details-order">
+        <header class="details-order__header">
+          <div class="details-order__row1">
+          <h2 class="details-order__main-header">Детали заказа #56345</h2>
+          <h3 class="details-order__middle-header">YHO87D</h3>
+          <span class="details-order__status">Ожидает выписки</span>
+          <p class="details-order__date"><span>Дата создания:</span><time datetime="2018-02-17"> 17 февраля 2018</time></p>
+          </div>
+          <div class="details-order__row2">
+          <span class="details-order__number">LH/PUCOH8</span>
+          <span class="details-order__number">LH/PUCOH8</span>
+          <span class="details-order__number">LH/PUCOH8</span>
+          <p class="details-order__date details-order__date--right"><span>Выписан:</span><time datetime="2018-02-18"> 18 февраля 2018</time></p>
+          </div>
+        </header>
+        <div class="details-order__container">
+          <div class="column-fligts">
+            <div class="column-fligts__fluid">
+              <div class="column-fligts__section-tickets">
+                <div class="column-fligts__flight">
+                  <div class="flight__company-column">
+                      <img src="images/rectangle-3.png" width="59px" height="20px" alt="Логотип Авиакомпании">
+                      <span>Аэрофлот</span>
+                      <b>UT-267</b>
+                  </div>
+                  <div class="flight__timetable-column">
+                    <div class="timetable-column__city">
+                      <b>Нижний Новгород</b>
+                      <span class="flight__border-line flight__border-line--yellow"></span>
+                      <b>Франкфурт-на-Майне</b>
+                    </div>
+                    <div class="timetable-column__aero">
+                      <span>Стри́гино</span>
+                      <span>Шереметьево</span>
+                    </div>
+                    <div class="timetable-column__terminal">
+                      <span>Терминал А</span>
+                    </div>
+                    <div class="timetable-column__flight-time">
+                      <time datetime="2017-09-09T17:50"> 17:50 </time>
+                      <time datetime="2017-09-10T17:50"> 17:50 (+1) </time>
+                    </div>
+                    <div class="timetable-column__flight-date">
+                      <time datetime="2017-09-09T17:50"> 9 ноя 2017 </time>
+                      <span>В пути: 1 д 1ч 45 мин</span>
+                      <time datetime="2017-09-10T17:50"> 10 ноя 2017 </time>
+                    </div>
+                  </div>
+                  <div class="flight__service-column">
+                    <p class="flight__service-information">Код тарифа: <a class="flight__code-tariff" src="#">RELAXANDFLY</a></p>
+                    <p class="flight__service-information">Багаж: <span class="flight__information-item">0PC</span></p>
+                    <p class="flight__service-information">Семейство тарифа: <a class="flight__code-tariff" src="#">ECONOMY RESTRICTED</a></p>
+                    <p class="flight__service-information">Авиакомпания: <span class="flight__information-item">Ukrian International Airlines</span></p>
+                    <p class="flight__service-information">Оператор: <span class="flight__information-item">Аэрофлот</span></p>
+                    <p class="flight__service-information">Самолёт: <span class="flight__information-item">Airbus 20</span></p>
+                    <p class="flight__service-information">Услуги на борту:
+                    <span class="flight__wifi"></span>
+                    <span class="flight__charging"></span>
+                    <span class="flight__seat"></span>
+                    <span class="flight__youtube"></span></p>
+                  </div>
+                </div>
+                  <div class="column-fligts__period">
+                    <span class="period__time">Длительность остановки – 1 д 19ч 15м</span>
+                    <div class="tickets__last-column">Смена терминала - D</div>
+                  </div>
+                <div class="column-fligts__flight">
+                  <div class="flight__company-column">
+                    <img src="images/rectangle-3.png" width="59px" height="20px" alt="Логотип Авиакомпании">
+                    <span>Аэрофлот</span>
+                    <b>UT-267</b>
+                  </div>
+                  <div class="flight__timetable-column">
+                    <div class="timetable-column__city">
+                      <b>Нижний Новгород</b>
+                      <span class="flight__border-line flight__border-line--yellow"></span>
+                      <b>Франкфурт-на-Майне</b>
+                    </div>
+                    <div class="timetable-column__aero">
+                      <span>Стри́гино</span>
+                      <span>Шереметьево</span>
+                    </div>
+                    <div class="timetable-column__terminal">
+                      <span>Терминал А</span>
+                    </div>
+                    <div class="timetable-column__flight-time">
+                      <time datetime="2017-09-09T17:50"> 17:50 </time>
+                      <time datetime="2017-09-10T17:50"> 17:50 (+1) </time>
+                    </div>
+                    <div class="timetable-column__flight-date">
+                      <time datetime="2017-09-09T17:50"> 9 ноя 2017 </time>
+                      <span>В пути: 1 д 1ч 45 мин</span>
+                      <time datetime="2017-09-10T17:50"> 10 ноя 2017 </time>
+                    </div>
+                  </div>
+                  <div class="flight__service-column">
+                    <p class="flight__service-information">Код тарифа: <a class="flight__code-tariff" src="#">RELAXANDFLY</a></p>
+                    <p class="flight__service-information">Багаж: <span class="flight__information-item">0PC</span></p>
+                    <p class="flight__service-information">Семейство тарифа: <a class="flight__code-tariff" src="#">ECONOMY RESTRICTED</a></p>
+                    <p class="flight__service-information">Авиакомпания: <span class="flight__information-item">Ukrian International Airlines</span></p>
+                    <p class="flight__service-information">Оператор: <span class="flight__information-item">Аэрофлот</span></p>
+                    <p class="flight__service-information">Самолёт: <span class="flight__information-item">Airbus 20</span></p>
+                    <p class="flight__service-information">Услуги на борту:
+                    <span class="flight__wifi"></span>
+                    <span class="flight__charging"></span>
+                    <span class="flight__seat"></span>
+                    <span class="flight__youtube"></span></p>
+                  </div>
+                </div>
+              </div>
             </div>
-    </section>
+            <div class="column-fligts__flight column-fligts__flight--alone">
+              <div class="flight__company-column">
+                  <img src="images/rectangle-3.png" width="59px" height="20px" alt="Логотип Авиакомпании">
+                  <span>Аэрофлот</span>
+                  <b>UT-267</b>
+              </div>
+              <div class="flight__timetable-column">
+                <div class="timetable-column__city">
+                  <b>Нижний Новгород</b>
+                  <span class="flight__border-line flight__border-line--green flight__border-line--longer"></span>
+                  <b>Прага</b>
+                </div>
+                <div class="timetable-column__aero">
+                  <span>Стри́гино</span>
+                  <span>Шереметьево</span>
+                </div>
+                <div class="timetable-column__terminal">
+                  <span>Терминал А</span>
+                </div>
+                <div class="timetable-column__flight-time">
+                  <time datetime="2017-09-10T22:23"> 22:23 </time>
+                  <time datetime="2017-09-11T17:50"> 17:50 (+1) </time>
+                </div>
+                <div class="timetable-column__flight-date">
+                  <time datetime="2017-09-10T17:50"> 10 ноя 2017 </time>
+                  <span>В пути: 1 д 1ч 45 мин</span>
+                  <time datetime="2017-09-11T17:50"> 11 ноя 2017 </time>
+                </div>
+              </div>
+              <div class="flight__service-column">
+                <p class="flight__service-information">Код тарифа: <a class="flight__code-tariff" src="#">RELAXANDFLY</a></p>
+                <p class="flight__service-information">Багаж: <span class="flight__information-item">0PC</span></p>
+                <p class="flight__service-information">Семейство тарифа: <a class="flight__code-tariff" src="#">ECONOMY RESTRICTED</a></p>
+                <p class="flight__service-information">Авиакомпания: <span class="flight__information-item">Ukrian International Airlines</span></p>
+                <p class="flight__service-information">Оператор: <span class="flight__information-item">Аэрофлот</span></p>
+                <p class="flight__service-information">Самолёт: <span class="flight__information-item">Airbus 20</span></p>
+                <p class="flight__service-information">Услуги на борту:
+                <span class="flight__wifi"></span>
+                <span class="flight__charging"></span>
+                <span class="flight__seat"></span>
+                <span class="flight__youtube"></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="column-information">
+            <ul class="buy-navigation">
+              <li class="buy-navigation__item buy-navigation__item--plus"><a href="#">Создать запрос</a></li>
+              <li class="buy-navigation__item"><a href="#">Информация о покупателе</a></li>
+              <li class="buy-navigation__item"><a href="#">Информация о субагенте</a></li>
+            </ul>
+          </div>
+        </div>
+        <footer class="details-order__footer">
+          <div class="details-order__footer-wrapper">
+            <article class="comment comment--for-tickets">
+              <p class="comment__text">Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий!</p>
+            </article>
+            <div class="footer__annotation">
+              <b class="annotation__price">111 327, 00 р.</b>
+              <span class="annotation__card">Кредитная карта</span>
+              <a src= "#" class="annotation__plan">План рассрочки</a>
+            </div>
+          </div>
+          <div class="footer__buttons">
+            <button class="btn btn--bg btn--seat btn--choose"><span>Выбрать места</span></button>
+            <button class="btn btn--bg btn--bucks btn--pay"><span>Счет на оплату</span></button>
+            <button class="btn btn--cancel btn--icn-cancelled"><span>Отмена</span></button>
+          </div>
+        </footer>
+      </section>
+      <section class="details-tickets">
+        <aside class="passengers-navigation">
+          <ul class="passengers-navigation">
+            <li class="passengers-navigation__passenger passengers-navigation__passenger--active"><a src="#">
+              <span class="passenger__name">MR ALEXEJ BOIKO</span>
+              <span class="passenger__status">Взрослый</span>
+            </a></li>
+            <li class="passengers-navigation__passenger"><a src="#">
+              <span class="passenger__name">MR KONSTANTIN KONSTANTINOVICH ALEXEEV</span>
+              <span class="passenger__status">Взрослый</span>
+            </a></li>
+            <li class="passengers-navigation__passenger"><a src="#">
+              <span class="passenger__name">MR KONSTANTIN KONSTANTINOVICH ALEXEEV</span>
+              <span class="passenger__status">Ребёнок</span>
+            </a></li>
+            <li class="passengers-navigation__passenger"><a src="#">
+              <span class="passenger__name">MR KONSTANTIN KONSTANTINOVICH ALEXEEV</span>
+              <span class="passenger__status">Инфант</span>
+            </a></li>
+          </ul>
+        </aside>
+        <div class="stock">
+          <div class="stock__buttons">
+            <button class="btn btn--stock btn--ssr"><span>SSR</span></button>
+            <button class="btn btn--stock btn--osi"><span>OSI</span></button>
+            <button class="btn btn--stock btn--doco"><span>DOCO</span></button>
+            <button class="btn btn--stock btn--doca"><span>DOCA</span></button>
+            <button class="btn btn--stock btn--marg"><span>Наценка</span></button>
+            <button class="btn btn--stock btn--email"><span>E-mail</span></button>
+          </div>
+          <div class="table-wrapper__passport-data">
+            <h3>Паспортные данные</h3>
+            <input type="checkbox" id="hd-1" class="hide hide--btn"/>
+            <label for="hd-1"><span>Скрыть</span></label>
+          <table class="passport-data">
+            <tr class="passport-data__row">
+              <th class="passport-data__header-cell"><span>Гражданство</span></th>
+              <th class="passport-data__header-cell"><span>Тип документа</span></th>
+              <th class="passport-data__header-cell"><span>Номер документа</span></th>
+              <th class="passport-data__header-cell"><span>Срок действия</span></th>
+              <th class="passport-data__header-cell passport-data__header-cell--last"></th>
+            </tr>
+            <tr class="passport-data__row">
+              <td class="passport-data__cell"><span>Germany</span></td>
+              <td class="passport-data__cell"><span>Паспорт</span></td>
+              <td class="passport-data__cell"><span>234782578</span></td>
+              <td class="passport-data__cell"><span>28.04.20</span></td>
+              <td class="passport-data__cell passport-data__cell--last"><label></label></td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-wrapper__passport-data table-wrapper__passport-data--coupons">
+          <h3>Полётные купоны исходного билета 563748573647</h3>
+          <input type="checkbox" id="hd-2" class="hide hide--btn"/>
+          <label for="hd-2"><span>Скрыть</span></label>
+        <table class="passport-data">
+          <tr class="passport-data__row">
+            <th class="passport-data__header-cell passport-data__header-cell--coupon-first"><span>#</span></th>
+            <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Маршрут</span></th>
+            <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Рейс</span></th>
+            <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Статус</span></th>
+            <th class="passport-data__header-cell passport-data__header-cell--coupon passport-data__header-cell--coupon-longer"><span>Класс брони</span></th>
+            <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Багаж</span></th>
+            <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Место</span></th>
+            <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Тариф</span></th>
+          </tr>
+          <tr class="passport-data__row">
+            <td class="passport-data__cell passport-data__cell--coupon-first"><span>1</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>SVO - CDG</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>AF - 1145</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon passport-data__cell--E"><span>E</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon passport-data__cell--coupon-longer"><span>V</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>1PC</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>-</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>VSRRU</span></td>
+          </tr>
+          <tr class="passport-data__row">
+            <td class="passport-data__cell passport-data__cell--coupon-first"><span>2</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>SVO - CDG</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>AF - 1145</span></td>
+            <td class="passport-data__cell passport-data__cell--E"><span>E</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>V</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>1PC</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>-</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>VSRRU</span></td>
+          </tr>
+          <tr class="passport-data__row">
+            <td class="passport-data__cell passport-data__cell--coupon-first"><span>3</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>SVO - CDG</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>AF - 1145</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon passport-data__cell--E"><span>E</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>V</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>1PC</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>-</span></td>
+            <td class="passport-data__cell passport-data__cell--coupon"><span>VSRRU</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="table-wrapper__passport-data table-wrapper__passport-data--coupons">
+        <h3>Полётные купоны нового билета 563748573656</h3>
+        <input type="checkbox" id="hd-3" class="hide hide--btn"/>
+        <label for="hd-3"><span>Скрыть</span></label>
+      <table class="passport-data">
+        <tr class="passport-data__row">
+          <th class="passport-data__header-cell passport-data__header-cell--coupon-first"><span>#</span></th>
+          <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Маршрут</span></th>
+          <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Рейс</span></th>
+          <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Статус</span></th>
+          <th class="passport-data__header-cell passport-data__header-cell--coupon passport-data__header-cell--coupon-longer"><span>Класс брони</span></th>
+          <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Багаж</span></th>
+          <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Место</span></th>
+          <th class="passport-data__header-cell passport-data__header-cell--coupon"><span>Тариф</span></th>
+        </tr>
+        <tr class="passport-data__row">
+          <td class="passport-data__cell passport-data__cell--coupon-first"><span>1</span></td>
+          <td class="passport-data__cell passport-data__cell--coupon"><span>SVO - CDG</span></td>
+          <td class="passport-data__cell passport-data__cell--coupon"><span>AF - 4758</span></td>
+          <td class="passport-data__cell passport-data__cell--coupon passport-data__cell--V"><span>V</span></td>
+          <td class="passport-data__cell passport-data__cell--coupon passport-data__cell--coupon-longer"><span>V</span></td>
+          <td class="passport-data__cell passport-data__cell--coupon"><span>1PC</span></td>
+          <td class="passport-data__cell passport-data__cell--coupon"><span>-</span></td>
+          <td class="passport-data__cell passport-data__cell--coupon"><span>VSRRU</span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="table-wrapper__passport-data table-wrapper__passport-data--osi">
+      <h3>OSI</h3>
+      <input type="checkbox" id="hd-4" class="hide hide--btn"/>
+      <label for="hd-4"><span>Скрыть</span></label>
+    <table class="passport-data">
+      <tr class="passport-data__row">
+        <th class="passport-data__header-cell passport-data__header-cell--osi-first"><span>#</span></th>
+        <th class="passport-data__header-cell passport-data__header-cell--osi-second"><span>Код AK</span></th>
+        <th class="passport-data__header-cell passport-data__header-cell--osi"><span>Информация</span></th>
+      </tr>
+      <tr class="passport-data__row">
+        <td class="passport-data__cell passport-data__cell--osi-first"><span>1</span></td>
+        <td class="passport-data__cell passport-data__cell--osi-second"><span>SU</span></td>
+        <td class="passport-data__cell passport-data__cell--osi"><span>Летит VIP клиент</span></td>
+      </tr>
+    </table>
   </div>
- -->
-  <!--<main class="container">
-    <h1 class="main-header--visually-hidden"></h1>
-
-  </main>
-  <footer class="main-footer">
-
-  </footer>-->
+  <div class="table-wrapper__passport-data table-wrapper__passport-data--visa">
+    <h3>Информация о визе (DOCO)</h3>
+    <input type="checkbox" id="hd-5" class="hide hide--btn"/>
+    <label for="hd-5"><span>Скрыть</span></label>
+  <table class="passport-data">
+    <tr class="passport-data__row">
+      <th class="passport-data__header-cell passport-data__header-cell--visa"><span>Место рождения</span></th>
+      <th class="passport-data__header-cell passport-data__header-cell--visa"><span>Страна рождения</span></th>
+      <th class="passport-data__header-cell passport-data__header-cell--visa passport-data__header-cell--longer"><span>Номер визы</span></th>
+      <th class="passport-data__header-cell passport-data__header-cell--visa passport-data__header-cell--longer"><span>Для поездки<br> в страну</span></th>
+      <th class="passport-data__header-cell passport-data__header-cell--visa"><span>Страна выдачи</span></th>
+      <th class="passport-data__header-cell passport-data__header-cell--visa"><span>Место выдачи</span></th>
+      <th class="passport-data__header-cell passport-data__header-cell--visa passport-data__header-cell--longer"><span>Дата выдачи</span></th>
+      <th class="passport-data__header-cell passport-data__header-cell--visa passport-data__header-cell--last"></th>
+    </tr>
+    <tr class="passport-data__row">
+      <td class="passport-data__cell passport-data__cell--visa"><span>Malta</span></td>
+      <td class="passport-data__cell passport-data__cell--visa"><span>Albania</span></td>
+      <td class="passport-data__cell passport-data__cell--visa passport-data__cell--visa-longer"><span>80240-8911</span></td>
+      <td class="passport-data__cell passport-data__cell--visa passport-data__cell--visa-longer"><span>Guernsey</span></td>
+      <td class="passport-data__cell passport-data__cell--visa"><span>Martinique</span></td>
+      <td class="passport-data__cell passport-data__cell--visa"><span>Goldenport</span></td>
+      <td class="passport-data__cell passport-data__cell--visa passport-data__cell--visa-longer"><span>02-06-2018</span></td>
+      <td class="passport-data__cell passport-data__cell--last passport-data__cell--last-visa passport-data__cell--visa"><label></label></td>
+    </tr>
+  </table>
+</div>
+<div class="table-wrapper__passport-data table-wrapper__passport-data--doca">
+  <h3>Информация о месте пребывания (DOCА)</h3>
+  <input type="checkbox" id="hd-6" class="hide hide--btn"/>
+  <label for="hd-6"><span>Скрыть</span></label>
+<table class="passport-data">
+  <tr class="passport-data__row">
+    <th class="passport-data__header-cell passport-data__header-cell--visa"><span>Тип</span></th>
+    <th class="passport-data__header-cell passport-data__header-cell--visa"><span>Страна прибытия</span></th>
+    <th class="passport-data__header-cell passport-data__header-cell--visa passport-data__header-cell--longer"><span>Город</br> прибытия</span></th>
+    <th class="passport-data__header-cell passport-data__header-cell--visa passport-data__header-cell--addres"><span>Адрес</span></th>
+    <th class="passport-data__header-cell passport-data__header-cell--visa"><span>Место<br> выдачи</span></th>
+    <th class="passport-data__header-cell passport-data__header-cell--visa passport-data__header-cell--last"></th>
+  </tr>
+  <tr class="passport-data__row">
+    <td class="passport-data__cell passport-data__cell--visa"><span>Malta</span></td>
+    <td class="passport-data__cell passport-data__cell--visa"><span>Albania</span></td>
+    <td class="passport-data__cell passport-data__cell--visa passport-data__cell--visa-longer"><span>80240-8911</span></td>
+    <td class="passport-data__cell passport-data__cell--visa passport-data__cell--addres"><span>Martinique</span></td>
+    <td class="passport-data__cell passport-data__cell--visa"><span>Goldenport</span></td>
+    <td class="passport-data__cell passport-data__cell--last passport-data__cell--last-visa passport-data__cell--visa"><label></label></td>
+  </tr>
+</table>
+</div>
+<div class="table-wrapper__passport-data table-wrapper__passport-data--card-passenger">
+  <h3>Карта часто летающего пассажира</h3>
+  <input type="checkbox" id="hd-7" class="hide hide--btn"/>
+  <label for="hd-7"><span>Скрыть</span></label>
+<table class="passport-data">
+  <tr class="passport-data__row">
+    <th class="passport-data__header-cell"><span>Авиакомпания</span></th>
+    <th class="passport-data__header-cell"><span>Номер карты</span></th>
+  </tr>
+  <tr class="passport-data__row">
+    <td class="passport-data__cell"><span>Aeroflot</span></td>
+    <td class="passport-data__cell"><span>68359-6541</span></td>
+  </tr>
+</table>
+</div>
+<div class="table-wrapper__passport-data table-wrapper__passport-data--assets">
+  <h3>Примечание к тарифу (FE)</h3>
+  <input type="checkbox" id="hd-8" class="hide hide--btn"/>
+  <label for="hd-8"><span>Скрыть</span></label>
+<table class="passport-data">
+  <tr class="passport-data__row">
+    <td class="passport-data__cell"><span>P752627669/DOB12MAY95/NONREF/HEBO3BPATEH/INCL VAT 0.00RUB</span></td>
+  </tr>
+</table>
+</div>
+<div class="table-wrapper__passport-data table-wrapper__passport-data--files">
+  <h3>Прикреплённые документы</h3>
+  <input type="checkbox" id="hd-9" class="hide hide--btn"/>
+  <label for="hd-9"><span>Скрыть</span></label>
+<table class="passport-data">
+  <tr class="passport-data__row">
+    <td class="passport-data__cell passport-data__cell--files">
+      <button class="btn btn--file"><label class="filetype filetype--gif"></label><span>Cправка об утере паспорта .gif</span></button>
+      <button class="btn btn--file"><label class="filetype filetype--jpeg"></label><span>Временное удостоверение личности .jpeg</span></button>
+      <button class="btn btn--file"><label class="filetype filetype--jpg"></label><span>Свидетельство о рождении .jpg</span></button>
+      <button class="btn btn--file"><label class="filetype filetype--png"></label><span>Удостоверение инвалида .png</span></button>
+      <button class="btn btn--file"><label class="filetype filetype--tiff"></label><span>Пенсионное удостоверение .tiff</span></button>
+      <button class="btn btn--file"><label class="filetype filetype--pdf"></label><span>Справка.pdf</span></button>
+    </td>
+  </tr>
+</table>
+</div>
+<div class="table-wrapper__passport-data table-wrapper__passport-data--rail">
+  <h3>Rail&Fly</h3>
+  <input type="checkbox" id="hd-10" class="hide hide--btn"/>
+  <label for="hd-10"><span>Скрыть</span></label>
+  <table class="passport-data">
+    <tr class="passport-data__row">
+      <th class="passport-data__header-cell"><span>Сегмент</span></th>
+      <th class="passport-data__header-cell"><span>ЖД перевозчик</span></th>
+      <th class="passport-data__header-cell"><span>Номер заказа</span></th>
+    </tr>
+    <tr class="passport-data__row">
+      <td class="passport-data__cell"><span>QYG (Германия ЖД) - (Франфуркт-на-Майне)</span></td>
+      <td class="passport-data__cell"><span>AccessRail(9B)</span></td>
+      <td class="passport-data__cell"><span>650286567</span></td>
+    </tr>
+    <tr class="passport-data__row">
+      <td class="passport-data__cell passport-data__cell--rail"><span>FRA (Франфуркт-на-Майне) - QYG (Германия ЖД)</span></td>
+      <td class="passport-data__cell passport-data__cell--rail"><span>AccessRail(9B)</span></td>
+      <td class="passport-data__cell passport-data__cell--rail"><span>567890865</span></td>
+    </tr>
+  </table>
+</div>
+<article class="comment comment--for-stock">
+  <p class="comment__text comment__text--stock">Обращаем внимание, что номера рейсов 9В и время их отправления (прибытия), которые выходят в системах бронирования, никак не связаны с реальным расписанием поездов DB. Пассажиры могут получить информацию о реальном расписании в офисах продаж DB AG или на сайте <a src="www.bahn.de" class="comment__link">www.bahn.de</a></p>
+</article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer></footer>
 </body>
 </html>

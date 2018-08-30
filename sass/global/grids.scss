@@ -11,3 +11,198 @@
   flex-wrap: nowrap;
   align-items: center;
 }
+
+/* Центровщик */
+
+.container {
+  width: 1141px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 23px;
+  &__sidebar {
+    width: 160px;
+    min-height: 414px;
+  }
+}
+
+/* details-order */
+
+.details-order {
+  width: 980px;
+  min-height: 786px;
+  background-color: $white-background-color;
+  &__header {
+    border-bottom: solid 1px #dfdfdf;
+  }
+  &__row1 {
+    @include rowsOrderDetailsHeader();
+    margin-left: 26px;
+    margin-top: 25px;
+  }
+  &__row2 {
+    @include rowsOrderDetailsHeader();
+    margin-left: 26px;
+    margin-bottom: 21px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    min-height: 526px;
+    border-bottom: solid 1px #dfdfdf;
+  }
+
+  &__footer {
+    width: 980px;
+    min-height: 172px;
+  }
+}
+
+.column-fligts {
+  width: 699px;
+  min-height: 525px;
+  border-right: solid 2px #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  &__section-tickets {
+    width: 684px;
+    min-height: 340px;
+    height: 340px;
+    display:flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 21px;
+    border-left: solid 2px #fd9727;
+  }
+  &__fluid {
+    width: 699px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 2px #dfdfdf;
+  }
+  &__flight {
+    width: 667px;
+    height: 138px;
+    &--alone {
+      margin-top: 8px;
+      margin-left: 15px;
+      border-left: solid 2px #8cc152;
+    }
+  }
+  &__period {
+    width: 568px;
+    height: 42px;
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: solid 1px #dfdfdf;
+    border-bottom: solid 1px #dfdfdf;
+    display:flex;
+    flex-direction: row;
+    position:relative;
+  }
+}
+
+.column-information {
+  width: 279px;
+  min-height: 525px;
+}
+
+/* deils-order__footer */
+
+.details-order {
+  &__footer {
+    display: flex;
+    flex-direction: column;
+  }
+  &__footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer {
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+  }
+  &__annotation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 25px;
+    margin-top: 21px;
+  }
+}
+
+.comment {
+  width: 684px;
+  min-height:62px;
+  border: solid 1px #faa61a;
+  position: relative;
+  &--for-tickets {
+    width: 686px;
+    min-height:62px;
+    margin-left:15px;
+    margin-top: 10px;
+  }
+  &--for-stock {
+    width: 695px;
+    min-height:94px;
+    margin-left:25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  &__link {
+    color: #7b9be0;
+    text-decoration: underline;
+  }
+  &__text {
+    @include fontsForTextOfComment();
+    margin-left: 54px;
+    &--stock {
+      @include textCommentStock();
+    }
+    &::before {
+      @include AddIcnWarning ();
+    }
+  }
+}
+
+/* detail-tickets section */
+
+.details-tickets {
+  width: 981px;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.passengers-navigation {
+  width: 235px;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+}
+
+.stock {
+  width: 745px;
+  height: auto;
+  margin-bottom:40px;
+  display:flex;
+  flex-direction: column;
+  background-color: $white-background-color;
+  &__buttons {
+    width: 745px;
+    height: 36px;
+    margin-top: 25px;
+    display:flex;
+    flex-direction: row;
+  }
+}

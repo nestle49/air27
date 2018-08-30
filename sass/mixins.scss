@@ -31,3 +31,570 @@
     top: 28px;
   }
 }
+
+/* Шрифты навигации */
+
+@mixin fontsForNav {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5d5f65;
+}
+
+@mixin fontsForNavLastItem {
+  font-size: 12px;
+}
+
+/* details-order-flex */
+@mixin rowsOrderDetailsHeader {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  align-items: baseline;
+}
+
+/* Шрифты деталей заказа */
+@mixin fontsForOrderDetailsHeaderMain {
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #202020;
+}
+
+@mixin fontsForOrderDetailsHeaderMainMiddle {
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #909090;
+}
+
+@mixin fontsForOrderDetailsHeaderMainDate {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+@mixin fontsForOrderDetailsHeaderNumber {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+/* Иконка статуса ожидания выписки */
+
+@mixin iconForWitingStatus {
+  content: "";
+  position: absolute;
+  left: 0px;
+  margin-left:-24px;
+  width: 14px;
+  height: 14px;
+  background-image:url(../images/icn-order-waiting.png);
+}
+
+@mixin iconForWitingStatusRed {
+  content: "";
+  position: absolute;
+  left:0;
+  margin-left: 2px;
+  margin-top: -3px;
+  width: 20px;
+  height: 20px;
+  background-image:url(../images/icn-red-watch.png);
+}
+
+@mixin fontsForPeriodBetweenFligts {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.42;
+  letter-spacing: normal;
+}
+
+@mixin flexForTableFligts {
+  display:inline-flex;
+  flex-direction: row;
+  white-space: nowrap;
+  justify-content: space-between;
+}
+
+@mixin flightCompanyFonts {
+  margin-top:20px;
+  margin-left: 13px;
+  width: 56px;
+  height: 14px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+@mixin flightCompanyFontsNumber {
+  margin-top:2px;
+  margin-left: 21px;
+  width: 40px;
+  height: 14px;
+  font-family: Roboto-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+@mixin flightCityFonts {
+  height: 16px;
+  font-family: Roboto-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #202020;
+}
+
+@mixin flightAeroFonts {
+  height: 16px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+@mixin flightTerminalFonts {
+  height: 11px;
+  font-family: Roboto-Light;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5d5f65;
+}
+
+@mixin flightTimeFonts {
+  height: 16px;
+  font-family: Roboto-Bold;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #202020;
+}
+
+@mixin flightDateFonts {
+  height: 14px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+/* Шрифты для колонки с информацией в билете */
+@mixin flightsInformFontsLeft {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@mixin flightsInformFontsTariff {
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* Иконки услуг */
+
+@mixin wifiIcon {
+  content: "";
+  position: absolute;
+  left:0;
+  margin-left: 101px;
+  margin-top: -3px;
+  width: 20px;
+  height: 20px;
+  background-image:url(../images/wi-fi.png);
+  background-repeat: no-repeat;
+}
+
+@mixin chargeIcon {
+  content: "";
+  position: absolute;
+  left:0;
+  margin-left: 129px;
+  margin-top: -3px;
+  width: 20px;
+  height: 20px;
+  background-image:url(../images/icn-charge.png);
+  background-repeat: no-repeat;
+}
+
+@mixin seatIcon {
+  content: "";
+  position: absolute;
+  left:0;
+  margin-left: 157px;
+  margin-top: -3px;
+  width: 20px;
+  height: 20px;
+  background-image:url(../images/lie-seat.png);
+  background-repeat: no-repeat;
+}
+
+@mixin youtubeIcon {
+  content: "";
+  position: absolute;
+  left:0;
+  margin-left: 186px;
+  margin-top: -3px;
+  width: 20px;
+  height: 20px;
+  background-image:url(../images/icn-youtube.png);
+  background-repeat: no-repeat;
+}
+
+@mixin fontsRightListOfLinks {
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@mixin plusForListOfLinks {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -20px;
+  width: 12px;
+  height: 2px;
+  background-color: #7b9be0;
+  margin: 0 auto;
+}
+
+@mixin fontsForTextOfComment {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5d5f65;
+}
+
+@mixin AddIcnWarning {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  width: 24px;
+  height: 20px;
+  background-image:url(../images/icn-warning.png);
+}
+
+@mixin fontPriceDetailsOrder {
+  font-family: Roboto-Medium;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #202020;
+}
+
+@mixin fontCardDetailsOrder {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+}
+
+@mixin fontPlanDetailOrder {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+}
+
+@mixin btnForDetailOrderBlockBgFont {
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #7b9be0;
+}
+
+@mixin btnForDetailOrderBlockFont {
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #b61e1b;
+}
+
+@mixin addIcnSeatForBtn {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 20px;
+  height: 18px;
+  background-image:url(../images/seat.png);
+}
+
+@mixin addIcnBucksForBtn {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image:url(../images/bucks.png);
+}
+
+@mixin addIncCancelledForBtn {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  background-image:url(../images/cancelled.png);
+}
+
+/* detail-tickets section */
+@mixin fontsForNamePassenger {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+@mixin fontsForStatusPassenger {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+@mixin fontsForActiveNamePassenger {
+  width: 102.4px;
+  height: 14px;
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7b9be0;
+}
+
+@mixin fontsForActiveStatusPassenger {
+  width: 58.2px;
+  height: 14px;
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7b9be0;
+}
+
+/* font for tables */
+
+@mixin passportHead {
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+@mixin hideText {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #7b9be0;
+}
+
+
+@mixin fontHeaderCell {
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #202020
+}
+
+@mixin fontCell {
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #202020;
+}
+
+@mixin fontE {
+  font-family: Roboto-Bold;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #c6ad00;
+}
+
+@mixin fontV {
+  font-family: Roboto-Bold;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #bf3835;
+}
+
+@mixin fontForFileButtons {
+  opacity: 0.5;
+  font-family: Roboto-Regular;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #2e2e2e;
+}
+
+@mixin parametersFileTypeIcn {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 30px;
+}
+
+@mixin textCommentStock {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5d5f65;
+}
+
+@mixin fontForHelp {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f2f4f9;
+}
