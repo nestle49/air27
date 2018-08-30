@@ -7,6 +7,9 @@
   &__header {
     width: 980px;
     min-height: 84px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   &__main-header {
     width: 198px;
@@ -27,11 +30,12 @@
     }
   }
   &__date {
-    margin-left: 318px;
-    margin-right: 25px;
+    margin-left:auto;
+    margin-right:25px;
     @include fontsForOrderDetailsHeaderMainDate();
     &--right {
-      margin-left: 558px;
+      margin-left:auto;
+      margin-right:25px;
     }
     & span {
       font-weight: normal;
@@ -47,6 +51,15 @@
       margin-left: 0px;
     }
     @include fontsForOrderDetailsHeaderNumber();
+  }
+  &__row1 {
+    height: 16px;
+    //align-self:flex-start;
+    margin-top: 0px;
+  }
+  &__row2 {
+    height: 16px;
+    margin-top: -8px;
   }
 }
 
@@ -149,7 +162,7 @@
 /* Третья колонка билета */
 
 .flight__service-column {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 271px;
   height: 138px;

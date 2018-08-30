@@ -39,7 +39,7 @@
     &--active {
       border-right: none;
       background-color: $white-background-color;
-      
+
       & a {
         margin-top: 15px;
         & .passenger__name {
@@ -203,7 +203,7 @@
   width: 695px;
   //min-height: 70px;
   margin-bottom: 0px;
-  border: solid 1px #e9e9e9;
+  //border: solid 1px #e9e9e9;
   border-collapse: collapse;
   overflow-y: auto;
 
@@ -318,9 +318,24 @@
         position: absolute; /* Абсолютное позиционирование */
         z-index: 1; /* Отображаем подсказку поверх других элементов */
         font-family: Arial, sans-serif; /* Гарнитура шрифта */
-        padding: 5px 10px; /* Поля */
-        border: 1px solid #333; /* Параметры рамки */
         background-color: #666;
+        padding: 4px 6px;
+        margin-top: 24px;
+        margin-left: -42px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      &:hover::before {
+        content: ""; /* Выводим текст */
+        @include fontForHelp();
+        position: absolute; /* Абсолютное позиционирование */
+        z-index: 1; /* Отображаем подсказку поверх других элементов */
+        border: 8px solid transparent;
+        border-top: 10px solid #666;
+        margin-top: 10px;
+        margin-left: -4px;
+        display: inline-block;
+        transform:rotate(180deg);
       }
     }
     &--V {
@@ -332,10 +347,24 @@
         position: absolute; /* Абсолютное позиционирование */
         z-index: 1; /* Отображаем подсказку поверх других элементов */
         font-family: Arial, sans-serif; /* Гарнитура шрифта */
-        padding: 5px 10px; /* Поля */
-        border: 1px solid #333; /* Параметры рамки */
         background-color: #666;
-        right: 100px;
+        padding: 4px 6px;
+        margin-top: 24px;
+        margin-left: -24px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      &:hover::before {
+        content: ""; /* Выводим текст */
+        @include fontForHelp();
+        position: absolute; /* Абсолютное позиционирование */
+        z-index: 1; /* Отображаем подсказку поверх других элементов */
+        border: 8px solid transparent;
+        border-top: 10px solid #666;
+        margin-top: 10px;
+        margin-left: -3px;
+        display: inline-block;
+        transform:rotate(180deg);
       }
       & span {
         margin-left:0;
@@ -372,9 +401,8 @@
       flex-wrap: wrap;
       width: 100%;
       padding-bottom: 15px;
-      margin-left: -2px;
       padding-left: 15px;
-      width: 680px;
+      width: 679px;
     }
   }
 }
@@ -541,4 +569,17 @@ input[type="checkbox"] { display: none; }
       background-image: url(../images/tiff.png);
     }
   }
+}
+
+
+table tr:last-of-type td{
+  border-bottom: 0px;
+}
+
+table tr td:first-of-type, table tr th:first-of-type {
+  border-left: 0px;
+}
+
+table tr td:last-of-type, table tr th:last-of-type {
+  border-right: 0px;
 }

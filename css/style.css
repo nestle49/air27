@@ -137,7 +137,10 @@
   width: 684px;
   min-height: 62px;
   border: solid 1px #faa61a;
-  position: relative; }
+  position: relative;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0; }
   .comment--for-tickets {
     width: 686px;
     min-height: 62px;
@@ -256,7 +259,7 @@ body {
 .main-header__logo {
   width: 91px;
   height: 19px;
-  margin-left: 328px;
+  margin: auto;
   font-family: Roboto-Medium;
   font-size: 16px;
   font-weight: 500;
@@ -354,7 +357,10 @@ body {
   flex-direction: column; }
   .details-order__header {
     width: 980px;
-    min-height: 84px; }
+    min-height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
   .details-order__main-header {
     width: 198px;
     font-family: Roboto-Medium;
@@ -397,7 +403,7 @@ body {
       height: 14px;
       background-image: url(../images/icn-order-waiting.png); }
   .details-order__date {
-    margin-left: 318px;
+    margin-left: auto;
     margin-right: 25px;
     font-family: Roboto-Regular;
     font-size: 12px;
@@ -408,7 +414,8 @@ body {
     letter-spacing: normal;
     color: #000000; }
     .details-order__date--right {
-      margin-left: 558px; }
+      margin-left: auto;
+      margin-right: 25px; }
     .details-order__date span {
       font-weight: normal;
       color: #4a4a4a; }
@@ -427,6 +434,12 @@ body {
     color: #000000; }
     .details-order__number:first-of-type {
       margin-left: 0px; }
+  .details-order__row1 {
+    height: 16px;
+    margin-top: 0px; }
+  .details-order__row2 {
+    height: 16px;
+    margin-top: -8px; }
 
 .period__time {
   display: inline-flex;
@@ -1020,7 +1033,6 @@ body {
 .passport-data {
   width: 695px;
   margin-bottom: 0px;
-  border: solid 1px #e9e9e9;
   border-collapse: collapse;
   overflow-y: auto; }
   .passport-data td, .passport-data th {
@@ -1145,11 +1157,34 @@ body {
         /* Отображаем подсказку поверх других элементов */
         font-family: Arial, sans-serif;
         /* Гарнитура шрифта */
-        padding: 5px 10px;
-        /* Поля */
-        border: 1px solid #333;
-        /* Параметры рамки */
-        background-color: #666; }
+        background-color: #666;
+        padding: 4px 6px;
+        margin-top: 24px;
+        margin-left: -42px;
+        border-radius: 5px;
+        display: inline-block; }
+      .passport-data__cell--E:hover::before {
+        content: "";
+        /* Выводим текст */
+        font-family: Roboto-Regular;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #f2f4f9;
+        position: absolute;
+        /* Абсолютное позиционирование */
+        z-index: 1;
+        /* Отображаем подсказку поверх других элементов */
+        border: 8px solid transparent;
+        border-top: 10px solid #666;
+        margin-top: 10px;
+        margin-left: -4px;
+        display: inline-block;
+        transform: rotate(180deg); }
     .passport-data__cell--V {
       font-family: Roboto-Bold;
       font-size: 14px;
@@ -1178,12 +1213,34 @@ body {
         /* Отображаем подсказку поверх других элементов */
         font-family: Arial, sans-serif;
         /* Гарнитура шрифта */
-        padding: 5px 10px;
-        /* Поля */
-        border: 1px solid #333;
-        /* Параметры рамки */
         background-color: #666;
-        right: 100px; }
+        padding: 4px 6px;
+        margin-top: 24px;
+        margin-left: -24px;
+        border-radius: 5px;
+        display: inline-block; }
+      .passport-data__cell--V:hover::before {
+        content: "";
+        /* Выводим текст */
+        font-family: Roboto-Regular;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #f2f4f9;
+        position: absolute;
+        /* Абсолютное позиционирование */
+        z-index: 1;
+        /* Отображаем подсказку поверх других элементов */
+        border: 8px solid transparent;
+        border-top: 10px solid #666;
+        margin-top: 10px;
+        margin-left: -3px;
+        display: inline-block;
+        transform: rotate(180deg); }
       .passport-data__cell--V span {
         margin-left: 0; }
     .passport-data__cell--coupon-first {
@@ -1209,9 +1266,8 @@ body {
       flex-wrap: wrap;
       width: 100%;
       padding-bottom: 15px;
-      margin-left: -2px;
       padding-left: 15px;
-      width: 680px; }
+      width: 679px; }
 
 /* table open */
 input[type="checkbox"] {
@@ -1390,3 +1446,12 @@ input[type="checkbox"] {
   top: -16px;
   left: -94px;
   background-image: url(../images/tiff.png); }
+
+table tr:last-of-type td {
+  border-bottom: 0px; }
+
+table tr td:first-of-type, table tr th:first-of-type {
+  border-left: 0px; }
+
+table tr td:last-of-type, table tr th:last-of-type {
+  border-right: 0px; }
