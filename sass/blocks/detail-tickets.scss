@@ -39,6 +39,7 @@
     &--active {
       border-right: none;
       background-color: $white-background-color;
+      
       & a {
         margin-top: 15px;
         & .passenger__name {

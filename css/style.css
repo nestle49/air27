@@ -242,7 +242,6 @@ body {
 
 /* main-header.scss */
 .main-header__header {
-  width: 165px;
   height: 19px;
   font-family: Roboto-Medium;
   font-size: 16px;
@@ -897,7 +896,6 @@ body {
       .passengers-navigation__passenger--active a {
         margin-top: 15px; }
         .passengers-navigation__passenger--active a .passenger__name {
-          width: 102.4px;
           height: 14px;
           font-family: Roboto-Medium;
           font-size: 12px;
