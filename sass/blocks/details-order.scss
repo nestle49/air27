@@ -4,6 +4,7 @@
 .details-order {
   display: flex;
   flex-direction: column;
+
   &__header {
     width: 980px;
     min-height: 84px;
@@ -12,16 +13,16 @@
     justify-content: space-around;
   }
   &__main-header {
-    width: 198px;
+    //width: 198px;
     @include fontsForOrderDetailsHeaderMain();
   }
   &__middle-header {
-    width: 67px;
+    //width: 67px;
     margin-left: 15px;
     @include fontsForOrderDetailsHeaderMain();
   }
   &__status {
-    width: 105px;
+    //width: 105px;
     margin-left: 37px;
     position: relative;
     @include fontsForOrderDetailsHeaderMainMiddle();
@@ -43,7 +44,7 @@
     }
   }
   &__number {
-    width: 67px;
+    //width: 67px;
     margin: 0;
     padding: 0;
     margin-left: 8px;

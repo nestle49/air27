@@ -362,28 +362,27 @@ body {
     flex-direction: column;
     justify-content: space-around; }
   .details-order__main-header {
-    width: 198px;
     font-family: Roboto-Medium;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
+    font-kerning: auto;
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
     color: #202020; }
   .details-order__middle-header {
-    width: 67px;
     margin-left: 15px;
     font-family: Roboto-Medium;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
+    font-kerning: auto;
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
     color: #202020; }
   .details-order__status {
-    width: 105px;
     margin-left: 37px;
     position: relative;
     font-family: Roboto-Medium;
@@ -420,7 +419,6 @@ body {
       font-weight: normal;
       color: #4a4a4a; }
   .details-order__number {
-    width: 67px;
     margin: 0;
     padding: 0;
     margin-left: 8px;
