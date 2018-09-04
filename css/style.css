@@ -245,6 +245,13 @@ body {
   align-items: center; }
 
 /* main-header.scss */
+.main-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start; }
+
 .main-header__header {
   height: 19px;
   font-family: Roboto-Medium;
@@ -269,20 +276,18 @@ body {
   letter-spacing: -1.6px;
   text-transform: uppercase;
   color: #7b9be0;
-  position: relative;
-  align-self: center;
-  margin: auto; }
+  align-self: center; }
 
 .btn--message {
   width: 48px;
   height: 48px;
-  align-self: flex-end;
   margin-right: 8px;
   background-color: #ffffff;
   background-image: url(../images/header-link-button.svg);
   cursor: pointer;
   border: none;
-  outline: none; }
+  outline: none;
+  align-self: flex-end; }
 
 .btn--toggle {
   width: 62px;

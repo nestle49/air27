@@ -1,6 +1,13 @@
 /* main-header.scss */
 
 .main-header {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
   &__header {
     height: 19px;
     @include fontsHeader();
@@ -15,9 +22,7 @@
     letter-spacing: -1.6px;
     text-transform: uppercase;
     color: #7b9be0;
-    position: relative;
     align-self:center;
-    margin: auto;
   }
 }
 
@@ -25,13 +30,13 @@
   &--message {
     width: 48px;
     height: 48px;
-    align-self: flex-end;
     margin-right: 8px;
     background-color: $white-background-color;
     background-image: url(../images/header-link-button.svg);
     cursor: pointer;
     border: none;
     outline: none;
+    align-self: flex-end;
   }
   &--toggle {
     width:62px;
