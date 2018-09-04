@@ -7,9 +7,11 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
+
   }
   &__header {
     height: 19px;
+    width: 165px;
     @include fontsHeader();
     letter-spacing: normal;
     text-transform: uppercase;
@@ -18,11 +20,12 @@
   &__logo {
     width: 91px;
     height: 19px;
+    margin-left: -161px;
     @include fontsHeader();
     letter-spacing: -1.6px;
     text-transform: uppercase;
     color: #7b9be0;
-    align-self:center;
+
   }
 }
 

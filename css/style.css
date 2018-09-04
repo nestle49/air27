@@ -19,7 +19,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-content: center; }
 
 /* Центровщик */
 .container {
@@ -254,6 +255,7 @@ body {
 
 .main-header__header {
   height: 19px;
+  width: 165px;
   font-family: Roboto-Medium;
   font-size: 16px;
   font-weight: 500;
@@ -267,6 +269,7 @@ body {
 .main-header__logo {
   width: 91px;
   height: 19px;
+  margin-left: -161px;
   font-family: Roboto-Medium;
   font-size: 16px;
   font-weight: 500;
@@ -275,8 +278,7 @@ body {
   line-height: normal;
   letter-spacing: -1.6px;
   text-transform: uppercase;
-  color: #7b9be0;
-  align-self: center; }
+  color: #7b9be0; }
 
 .btn--message {
   width: 48px;
