@@ -18,7 +18,8 @@
   background-color: #ffffff;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
 
 /* Центровщик */
 .container {
@@ -259,7 +260,6 @@ body {
 .main-header__logo {
   width: 91px;
   height: 19px;
-  margin: auto;
   font-family: Roboto-Medium;
   font-size: 16px;
   font-weight: 500;
@@ -268,12 +268,15 @@ body {
   line-height: normal;
   letter-spacing: -1.6px;
   text-transform: uppercase;
-  color: #7b9be0; }
+  color: #7b9be0;
+  position: relative;
+  align-self: center;
+  margin: auto; }
 
 .btn--message {
   width: 48px;
   height: 48px;
-  margin-left: auto;
+  align-self: flex-end;
   margin-right: 8px;
   background-color: #ffffff;
   background-image: url(../images/header-link-button.svg);
